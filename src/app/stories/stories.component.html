@@ -1,0 +1,33 @@
+  <!-- <div class="main-content">
+  <ol>
+       <li *ngFor="let item of items; let i = index" class="post">
+      Story #{{i+1}}
+      
+  </ol>
+  <div class="nav">
+    <a href="" class="prev">
+      ‹ Prev
+    </a>
+    <a href="" class="more">
+      More ›
+    </a>
+  </div>
+</div>   -->
+
+ <div class="main-content">
+  <ol>
+    <li *ngFor="let item of items | slice:0:45" class="post">
+      <item class="item-block" itemID="{{ item }}"></item>
+    </li>
+  </ol>
+  
+</div>
+
+<div class="nav">
+    <a href="" class="prev">
+      <-- Prev
+    </a>
+    <a href="" class="more">
+      More -->
+    </a>
+  </div> 
